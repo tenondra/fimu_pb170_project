@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -781,17 +781,6 @@ Wire Wire Line
 	11000 6300 11000 6050
 Connection ~ 10400 6300
 $Comp
-L 74xGxx:74LVC2G32 U9
-U 1 1 6008FC6F
-P 9400 5900
-F 0 "U9" H 9375 6167 50  0000 C CNN
-F 1 "74LVC2G32" H 9375 6076 50  0000 C CNN
-F 2 "" H 9400 5900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 9400 5900 50  0001 C CNN
-	1    9400 5900
-	1    0    0    -1  
-$EndComp
-$Comp
 L PB170:74HC08 U8
 U 1 1 6009381C
 P 8800 5750
@@ -830,37 +819,25 @@ Wire Wire Line
 Wire Wire Line
 	11000 5550 11000 4350
 Wire Wire Line
-	6600 4500 8550 4500
-Wire Wire Line
-	6600 4450 8450 4450
-Wire Wire Line
-	6600 4400 8400 4400
-Wire Wire Line
-	6600 4350 8500 4350
-Wire Wire Line
 	8550 5700 8550 4500
-Connection ~ 8550 4500
 Wire Wire Line
 	8550 4500 10200 4500
 Wire Wire Line
 	8550 5800 8500 5800
 Wire Wire Line
 	8500 5800 8500 4350
-Connection ~ 8500 4350
 Wire Wire Line
 	8500 4350 9900 4350
 Wire Wire Line
 	8550 6000 8450 6000
 Wire Wire Line
 	8450 6000 8450 4450
-Connection ~ 8450 4450
 Wire Wire Line
 	8450 4450 10400 4450
 Wire Wire Line
 	8400 4400 8400 6100
 Wire Wire Line
 	8400 6100 8550 6100
-Connection ~ 8400 4400
 Wire Wire Line
 	8400 4400 10800 4400
 Wire Wire Line
@@ -873,27 +850,7 @@ Connection ~ 9900 4350
 Wire Wire Line
 	9900 4350 11000 4350
 Wire Wire Line
-	8250 4650 6600 4650
-Wire Wire Line
-	6600 4700 8200 4700
-Wire Wire Line
-	8200 4700 8200 5750
-Wire Wire Line
 	5400 5750 5750 5750
-Wire Wire Line
-	8150 4750 6600 4750
-Wire Wire Line
-	8100 4800 6600 4800
-Wire Wire Line
-	5750 6200 8100 6200
-Wire Wire Line
-	8100 4800 8100 6200
-Wire Wire Line
-	8150 6250 5650 6250
-Wire Wire Line
-	5650 5950 5650 6250
-Wire Wire Line
-	8150 4750 8150 6250
 Wire Wire Line
 	900  6300 10400 6300
 NoConn ~ 5100 6150
@@ -920,27 +877,10 @@ Wire Wire Line
 	5750 5750 5750 5850
 Wire Wire Line
 	6600 5850 5750 5850
-Connection ~ 5750 5850
-Wire Wire Line
-	5750 5850 5750 6200
 Wire Wire Line
 	6600 5750 6600 5950
 Wire Wire Line
 	5400 5950 5650 5950
-Wire Wire Line
-	8250 5950 8250 4650
-Wire Wire Line
-	7200 5750 8200 5750
-Wire Wire Line
-	7200 5950 8250 5950
-NoConn ~ 6600 4800
-NoConn ~ 6600 4750
-NoConn ~ 6600 4700
-NoConn ~ 6600 4650
-NoConn ~ 6600 4450
-NoConn ~ 6600 4500
-NoConn ~ 6600 4400
-NoConn ~ 6600 4350
 Wire Wire Line
 	4750 2450 4750 2300
 Wire Wire Line
@@ -1010,30 +950,8 @@ F 3 "Nexperia-74HC32D-653_C5632.pdf" H 5750 2650 50  0001 C CNN
 	1    5750 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74xx:74LS32 U14
-U 1 1 5FFE92D6
-P 5750 2950
-F 0 "U14" H 5750 3275 50  0000 C CNN
-F 1 "74LS32" H 5750 3184 50  0000 C CNN
-F 2 "" H 5750 2950 50  0001 C CNN
-F 3 "Nexperia-74HC32D-653_C5632.pdf" H 5750 2950 50  0001 C CNN
-	1    5750 2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6450 2350 6450 2450
-$Comp
-L 74xx:74LS32 U15
-U 1 1 5FFDB1B9
-P 6350 2800
-F 0 "U15" H 6350 3125 50  0000 C CNN
-F 1 "74LS32" H 6350 3034 50  0000 C CNN
-F 2 "" H 6350 2800 50  0001 C CNN
-F 3 "Nexperia-74HC32D-653_C5632.pdf" H 6350 2800 50  0001 C CNN
-	1    6350 2800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Transistor_BJT:BC817 Q?
 U 1 1 5FFD06D3
@@ -1133,18 +1051,277 @@ Wire Wire Line
 	10000 2750 10000 2850
 Wire Wire Line
 	8300 2700 8300 2800
-NoConn ~ 8800 3100
-NoConn ~ 8800 2900
-NoConn ~ 8800 2800
-NoConn ~ 8800 2600
-NoConn ~ 7100 3050
-NoConn ~ 7100 2750
-NoConn ~ 7100 2550
-NoConn ~ 5450 3050
-NoConn ~ 5450 2850
-NoConn ~ 5450 2750
-NoConn ~ 5450 2550
-NoConn ~ 4350 2750
-NoConn ~ 4350 2550
-NoConn ~ 7100 2850
+Wire Wire Line
+	5750 5850 5750 5900
+Wire Wire Line
+	5900 5900 5900 5950
+Wire Wire Line
+	5750 5900 5900 5900
+Connection ~ 5750 5850
+Text GLabel 5900 5950 3    50   Input ~ 0
+JK1Q
+Text GLabel 5650 5950 3    50   Input ~ 0
+JK1!Q
+Text GLabel 7200 5750 2    50   Input ~ 0
+JK2Q
+Text GLabel 7200 5950 2    50   Input ~ 0
+JK2!Q
+Wire Wire Line
+	8500 4350 8200 4350
+Wire Wire Line
+	8200 4350 8200 4300
+Connection ~ 8500 4350
+Wire Wire Line
+	8400 4400 8050 4400
+Wire Wire Line
+	8050 4400 8050 4300
+Connection ~ 8400 4400
+Wire Wire Line
+	8450 4450 7900 4450
+Wire Wire Line
+	7900 4450 7900 4300
+Connection ~ 8450 4450
+Wire Wire Line
+	8550 4500 7750 4500
+Wire Wire Line
+	7750 4500 7750 4300
+Connection ~ 8550 4500
+Text GLabel 7750 4300 1    50   Input ~ 0
+D1Q
+Text GLabel 7900 4300 1    50   Input ~ 0
+D1!Q
+Text GLabel 8050 4300 1    50   Input ~ 0
+D2Q
+Text GLabel 8200 4300 1    50   Input ~ 0
+D2!Q
+$Comp
+L 74xx:74LS32 U15
+U 1 1 5FFDB1B9
+P 6350 2800
+F 0 "U15" H 6350 3125 50  0000 C CNN
+F 1 "74LS32" H 6350 3034 50  0000 C CNN
+F 2 "" H 6350 2800 50  0001 C CNN
+F 3 "Nexperia-74HC32D-653_C5632.pdf" H 6350 2800 50  0001 C CNN
+	1    6350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC2G32 U9
+U 2 1 6008FC6F
+P 9400 5900
+F 0 "U9" H 9375 6167 50  0000 C CNN
+F 1 "74LVC2G32" H 9375 6076 50  0000 C CNN
+F 2 "" H 9400 5900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 9400 5900 50  0001 C CNN
+	2    9400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U?
+U 1 1 60016A83
+P 5750 2950
+F 0 "U?" H 5750 3275 50  0000 C CNN
+F 1 "74LS32" H 5750 3184 50  0000 C CNN
+F 2 "" H 5750 2950 50  0001 C CNN
+F 3 "Nexperia-74HC32D-653_C5632.pdf" H 5750 2950 50  0001 C CNN
+	1    5750 2950
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 8800 3250 1000 900 
+U 60019DBB
+F0 "yellow" 50
+F1 "yellow.sch" 50
+F2 "D1Q" I R 9800 3300 50 
+F3 "D2Q" I R 9800 3500 50 
+F4 "D2!Q" I R 9800 3600 50 
+F5 "JK1Q" I R 9800 3750 50 
+F6 "JK1!Q" I R 9800 3850 50 
+F7 "JK2Q" I R 9800 3950 50 
+F8 "JK2!Q" I R 9800 4050 50 
+F9 "y1" I L 8800 3350 50 
+F10 "y2" I L 8800 3450 50 
+F11 "y3" I L 8800 3550 50 
+F12 "y4" I L 8800 3650 50 
+$EndSheet
+Text GLabel 9800 3300 2    50   Input ~ 0
+D1Q
+Text GLabel 9800 3500 2    50   Input ~ 0
+D2Q
+Text GLabel 9800 3600 2    50   Input ~ 0
+D2!Q
+Text GLabel 9800 3750 2    50   Input ~ 0
+JK1Q
+Text GLabel 9800 3850 2    50   Input ~ 0
+JK1!Q
+Text GLabel 9800 3950 2    50   Input ~ 0
+JK2Q
+Text GLabel 9800 4050 2    50   Input ~ 0
+JK2!Q
+Wire Wire Line
+	8800 3350 8750 3350
+Wire Wire Line
+	8750 3350 8750 3100
+Wire Wire Line
+	8750 3100 8800 3100
+Wire Wire Line
+	8800 3450 8700 3450
+Wire Wire Line
+	8700 3450 8700 2900
+Wire Wire Line
+	8700 2900 8800 2900
+Wire Wire Line
+	8800 3550 8650 3550
+Wire Wire Line
+	8650 3550 8650 2800
+Wire Wire Line
+	8650 2800 8800 2800
+Wire Wire Line
+	8800 3650 8600 3650
+Wire Wire Line
+	8600 3650 8600 2600
+Wire Wire Line
+	8600 2600 8800 2600
+$Sheet
+S 7100 3200 950  850 
+U 6004480C
+F0 "blue" 50
+F1 "blue.sch" 50
+F2 "D1Q" I R 8050 3250 50 
+F3 "D1!Q" I R 8050 3350 50 
+F4 "D2Q" I R 8050 3450 50 
+F5 "D2!Q" I R 8050 3550 50 
+F6 "JK1Q" I R 8050 3700 50 
+F7 "JK1!Q" I R 8050 3800 50 
+F8 "JK2Q" I R 8050 3900 50 
+F9 "b1" I L 7100 3300 50 
+F10 "b2" I L 7100 3400 50 
+F11 "b3" I L 7100 3500 50 
+F12 "b4" I L 7100 3600 50 
+$EndSheet
+Wire Wire Line
+	7100 3300 7050 3300
+Wire Wire Line
+	7050 3300 7050 3050
+Wire Wire Line
+	7050 3050 7100 3050
+Wire Wire Line
+	7100 3400 7000 3400
+Wire Wire Line
+	7000 3400 7000 2850
+Wire Wire Line
+	7000 2850 7100 2850
+Wire Wire Line
+	7100 3500 6950 3500
+Wire Wire Line
+	6950 3500 6950 2750
+Wire Wire Line
+	6950 2750 7100 2750
+Wire Wire Line
+	7100 3600 6900 3600
+Wire Wire Line
+	6900 3600 6900 2550
+Wire Wire Line
+	6900 2550 7100 2550
+Text GLabel 8050 3250 2    50   Input ~ 0
+D1Q
+Text GLabel 8050 3350 2    50   Input ~ 0
+D1!Q
+Text GLabel 8050 3450 2    50   Input ~ 0
+D2Q
+Text GLabel 8050 3550 2    50   Input ~ 0
+D2!Q
+Text GLabel 8050 3700 2    50   Input ~ 0
+JK1Q
+Text GLabel 8050 3800 2    50   Input ~ 0
+JK1!Q
+Text GLabel 8050 3900 2    50   Input ~ 0
+JK2Q
+$Sheet
+S 5450 3200 1050 950 
+U 6006FC3B
+F0 "green" 50
+F1 "green.sch" 50
+F2 "D1Q" I R 6500 3250 50 
+F3 "D1!Q" I R 6500 3350 50 
+F4 "D2Q" I R 6500 3450 50 
+F5 "D2!Q" I R 6500 3550 50 
+F6 "JK1Q" I R 6500 3700 50 
+F7 "JK1!Q" I R 6500 3800 50 
+F8 "JK2Q" I R 6500 3900 50 
+F9 "JK2!Q" I R 6500 4000 50 
+F10 "g1" I L 5450 3300 50 
+F11 "g2" I L 5450 3400 50 
+F12 "g3" I L 5450 3500 50 
+F13 "g4" I L 5450 3600 50 
+$EndSheet
+Text GLabel 6500 3250 2    50   Input ~ 0
+D1Q
+Text GLabel 6500 3350 2    50   Input ~ 0
+D1!Q
+Text GLabel 6500 3450 2    50   Input ~ 0
+D2Q
+Text GLabel 6500 3550 2    50   Input ~ 0
+D2!Q
+Text GLabel 6500 3700 2    50   Input ~ 0
+JK1Q
+Text GLabel 6500 3800 2    50   Input ~ 0
+JK1!Q
+Text GLabel 6500 3900 2    50   Input ~ 0
+JK2Q
+Text GLabel 6500 4000 2    50   Input ~ 0
+JK2!Q
+Wire Wire Line
+	5450 3300 5400 3300
+Wire Wire Line
+	5400 3300 5400 3050
+Wire Wire Line
+	5400 3050 5450 3050
+Wire Wire Line
+	5450 3400 5350 3400
+Wire Wire Line
+	5350 3400 5350 2850
+Wire Wire Line
+	5350 2850 5450 2850
+Wire Wire Line
+	5450 3500 5300 3500
+Wire Wire Line
+	5300 3500 5300 2750
+Wire Wire Line
+	5300 2750 5450 2750
+Wire Wire Line
+	5450 3600 5250 3600
+Wire Wire Line
+	5250 3600 5250 2550
+Wire Wire Line
+	5250 2550 5450 2550
+$Sheet
+S 4150 3150 750  750 
+U 6009AD55
+F0 "red" 50
+F1 "red.sch" 50
+F2 "D1!Q" I R 4900 3250 50 
+F3 "D2!Q" I R 4900 3350 50 
+F4 "JK2Q" I R 4900 3500 50 
+F5 "r1" I L 4150 3250 50 
+F6 "r2" I L 4150 3350 50 
+$EndSheet
+Wire Wire Line
+	4150 3250 4100 3250
+Wire Wire Line
+	4100 3250 4100 2750
+Wire Wire Line
+	4100 2750 4350 2750
+Wire Wire Line
+	4150 3350 4050 3350
+Wire Wire Line
+	4050 3350 4050 2550
+Wire Wire Line
+	4050 2550 4350 2550
+Text GLabel 4900 3250 2    50   Input ~ 0
+D1!Q
+Text GLabel 4900 3350 2    50   Input ~ 0
+D2!Q
+Text GLabel 4900 3500 2    50   Input ~ 0
+JK2Q
 $EndSCHEMATC

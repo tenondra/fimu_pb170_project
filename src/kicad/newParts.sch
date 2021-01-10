@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -89,14 +89,14 @@ F 4 "C5593" H 3300 1450 50  0001 C CNN "LCSC"
 $EndComp
 $Comp
 L PB170:74HC08 U2
-U 5 1 5FE8D2BE
+U 2 1 5FE8D2BE
 P 4050 1450
 F 0 "U2" H 4280 1496 50  0000 L CNN
 F 1 "74HC08" H 4280 1405 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4050 1450 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 4050 1450 50  0001 C CNN
 F 4 "C5593" H 4050 1450 50  0001 C CNN "LCSC"
-	5    4050 1450
+	2    4050 1450
 	1    0    0    -1  
 $EndComp
 $Comp
