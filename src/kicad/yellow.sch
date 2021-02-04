@@ -197,18 +197,18 @@ F 4 "C5593" H 6400 2950 50  0001 C CNN "LCSC"
 $EndComp
 $Comp
 L PB170:74HC08 U?
-U 4 1 5FFFEFCB
+U 3 1 5FFFEFCB
 P 6850 2950
 AR Path="/5FFFEFCB" Ref="U?"  Part="2" 
 AR Path="/6006FC3B/5FFFEFCB" Ref="U?"  Part="4" 
 AR Path="/6004480C/5FFFEFCB" Ref="U?"  Part="4" 
-AR Path="/60019DBB/5FFFEFCB" Ref="U10C"  Part="4" 
-F 0 "U10C" H 6875 3217 50  0000 C CNN
+AR Path="/60019DBB/5FFFEFCB" Ref="U10"  Part="3" 
+F 0 "U10" H 6875 3217 50  0000 C CNN
 F 1 "74HC08" H 6875 3126 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6850 2950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 6850 2950 50  0001 C CNN
 F 4 "C5593" H 6850 2950 50  0001 C CNN "LCSC"
-	4    6850 2950
+	3    6850 2950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -218,8 +218,8 @@ P 6650 3700
 AR Path="/5FFFF667" Ref="U?"  Part="2" 
 AR Path="/6006FC3B/5FFFF667" Ref="U?"  Part="4" 
 AR Path="/6004480C/5FFFF667" Ref="U?"  Part="4" 
-AR Path="/60019DBB/5FFFF667" Ref="U10D"  Part="4" 
-F 0 "U10D" H 6675 3967 50  0000 C CNN
+AR Path="/60019DBB/5FFFF667" Ref="U10"  Part="4" 
+F 0 "U10" H 6675 3967 50  0000 C CNN
 F 1 "74HC08" H 6675 3876 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6650 3700 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 6650 3700 50  0001 C CNN
