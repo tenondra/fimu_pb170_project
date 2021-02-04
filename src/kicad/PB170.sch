@@ -462,30 +462,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 6900 5850 50  0001 C CNN
 	1    6900 5850
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74xGxx:74AUC1G74 U11
-U 1 1 60079BD5
-P 10900 5800
-F 0 "U11" V 10946 5506 50  0000 R CNN
-F 1 "74AUC1G74" V 10855 5506 50  0000 R CNN
-F 2 "" H 10900 5800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 10900 5800 50  0001 C CNN
-	1    10900 5800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L 74xGxx:74AUC1G74 U10
-U 1 1 6008142D
-P 10300 5800
-F 0 "U10" V 10346 5506 50  0000 R CNN
-F 1 "74AUC1G74" V 10255 5506 50  0000 R CNN
-F 2 "" H 10300 5800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 10300 5800 50  0001 C CNN
-	1    10300 5800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	10200 4500 10200 5550
 Wire Wire Line
 	10400 6050 10400 6300
 Wire Wire Line
@@ -526,12 +502,6 @@ Wire Wire Line
 Wire Wire Line
 	9650 6050 10200 6050
 Wire Wire Line
-	10400 5550 10400 4450
-Wire Wire Line
-	10800 5550 10800 4400
-Wire Wire Line
-	11000 5550 11000 4350
-Wire Wire Line
 	8550 5700 8550 4500
 Wire Wire Line
 	8550 4500 10200 4500
@@ -553,8 +523,6 @@ Wire Wire Line
 	8400 6100 8550 6100
 Wire Wire Line
 	8400 4400 10800 4400
-Wire Wire Line
-	10800 6050 10800 6150
 Wire Wire Line
 	10800 6150 9900 6150
 Wire Wire Line
@@ -578,10 +546,9 @@ Connection ~ 6600 5950
 Connection ~ 4800 5950
 Connection ~ 4800 6400
 NoConn ~ 900  6300
-NoConn ~ 10550 5800
-NoConn ~ 10650 5800
-NoConn ~ 10050 5800
-NoConn ~ 11150 5800
+NoConn ~ 10600 5600
+NoConn ~ 10000 5600
+NoConn ~ 11200 5650
 Wire Wire Line
 	4000 5850 4800 5850
 Wire Wire Line
@@ -625,17 +592,6 @@ Wire Wire Line
 	3200 6400 4800 6400
 Wire Wire Line
 	2050 2450 2050 5300
-$Comp
-L Timer:LM555xM U1
-U 1 1 5FFCEE1C
-P 1500 7000
-F 0 "U1" H 1500 7581 50  0000 C CNN
-F 1 "74HC08" H 1500 7490 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2350 6600 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 2350 6600 50  0001 C CNN
-	1    1500 7000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6450 2350 6450 2450
 $Comp
@@ -1355,17 +1311,6 @@ Wire Wire Line
 	9200 5950 9100 5950
 Wire Wire Line
 	9200 5850 9100 5850
-$Comp
-L power:GND #PWR?
-U 1 1 6035291F
-P 1500 7400
-F 0 "#PWR?" H 1500 7150 50  0001 C CNN
-F 1 "GND" H 1505 7227 50  0000 C CNN
-F 2 "" H 1500 7400 50  0001 C CNN
-F 3 "" H 1500 7400 50  0001 C CNN
-	1    1500 7400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5200 1000 5200 1600
 $Comp
@@ -1398,4 +1343,83 @@ Wire Wire Line
 Connection ~ 5200 1600
 Wire Wire Line
 	5200 1600 5200 2200
+$Comp
+L Timer:NE555D N555
+U 1 1 601C8779
+P 1750 7100
+F 0 "N555" H 1750 7681 50  0000 C CNN
+F 1 "NE555D" H 1750 7590 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2600 6700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-NE555DR_C7593.pdf" H 2600 6700 50  0001 C CNN
+F 4 "C7593" H 1750 7100 50  0001 C CNN "LCSC"
+	1    1750 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 601DEE3F
+P 1750 6700
+AR Path="/601DEE3F" Ref="#PWR?"  Part="1" 
+AR Path="/5FEB4D4D/601DEE3F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1750 6550 50  0001 C CNN
+F 1 "+5V" V 1765 6828 50  0000 L CNN
+F 2 "" H 1750 6700 50  0001 C CNN
+F 3 "" H 1750 6700 50  0001 C CNN
+	1    1750 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601E7CDC
+P 1750 7500
+F 0 "#PWR?" H 1750 7250 50  0001 C CNN
+F 1 "GND" H 1755 7327 50  0000 C CNN
+F 2 "" H 1750 7500 50  0001 C CNN
+F 3 "" H 1750 7500 50  0001 C CNN
+	1    1750 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 6050 10400 6050
+Wire Wire Line
+	11000 6050 10900 6050
+Wire Wire Line
+	11000 4350 11000 5350
+Wire Wire Line
+	10800 4400 10800 5350
+Wire Wire Line
+	10400 4450 10400 5300
+Wire Wire Line
+	10200 4500 10200 5300
+Wire Wire Line
+	10900 6050 10900 5950
+Wire Wire Line
+	10800 5950 10800 6150
+Wire Wire Line
+	10300 5900 10300 6050
+Wire Wire Line
+	10200 5900 10200 6050
+NoConn ~ 10600 5650
+$Comp
+L 74xx:74HC74 U?
+U 1 1 601F0AD7
+P 10900 5650
+F 0 "U?" V 10946 5306 50  0000 R CNN
+F 1 "74HC74" V 10855 5306 50  0000 R CNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 10900 5650 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 10900 5650 50  0001 C CNN
+	1    10900 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74HC74 U?
+U 1 1 601F3650
+P 10300 5600
+F 0 "U?" V 10346 5256 50  0000 R CNN
+F 1 "74HC74" V 10255 5256 50  0000 R CNN
+F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 10300 5600 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 10300 5600 50  0001 C CNN
+	1    10300 5600
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
