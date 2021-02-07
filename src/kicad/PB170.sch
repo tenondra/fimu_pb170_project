@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -226,12 +226,6 @@ NoConn ~ 650  800
 NoConn ~ 650  1150
 NoConn ~ 650  1500
 NoConn ~ 650  1850
-$Sheet
-S 600  2100 850  1550
-U 5FEB4D4D
-F0 "Sheet5FEB4D4C" 50
-F1 "newParts.sch" 50
-$EndSheet
 $Comp
 L Device:LED DB2
 U 1 1 5FF80E46
@@ -421,10 +415,10 @@ F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 4950 2400 50  0001 L C
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 74xx:74LS73 U5
+L 74xx:74LS73 U20
 U 1 1 5FFFB942
 P 4550 6350
-F 0 "U5" H 4550 6717 50  0000 C CNN
+F 0 "U20" H 4550 6717 50  0000 C CNN
 F 1 "74LS73" H 4550 6626 50  0000 C CNN
 F 2 "" H 4550 6350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 4550 6350 50  0001 C CNN
@@ -432,10 +426,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 4550 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS73 U7
+L 74xx:74LS73 U21
 U 1 1 6000B5B4
 P 6350 6350
-F 0 "U7" H 6350 6717 50  0000 C CNN
+F 0 "U21" H 6350 6717 50  0000 C CNN
 F 1 "74LS73" H 6350 6626 50  0000 C CNN
 F 2 "" H 6350 6350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 6350 6350 50  0001 C CNN
