@@ -533,24 +533,11 @@ Wire Wire Line
 	4850 6450 5100 6450
 Wire Wire Line
 	4750 2450 4750 2300
-Wire Wire Line
-	4750 2450 6450 2450
-Connection ~ 6450 2450
-Wire Wire Line
-	6450 2450 8100 2450
-Wire Wire Line
-	8100 2450 8100 2400
-Connection ~ 8100 2450
-Wire Wire Line
-	8100 2450 9800 2450
-Connection ~ 4750 2450
 Connection ~ 2650 6350
 Text Notes 3350 6900 0    50   ~ 0
 const 1\n
 Wire Wire Line
 	2650 6900 4250 6900
-Wire Wire Line
-	6450 2350 6450 2450
 $Comp
 L Transistor_BJT:BC817 Q?
 U 1 1 5FFD06D3
@@ -1500,4 +1487,21 @@ Text GLabel 3550 4200 1    50   Input ~ 0
 555output
 Text GLabel 9600 6300 0    50   Input ~ 0
 555output
+Wire Wire Line
+	4750 2300 4750 500 
+Wire Wire Line
+	4750 500  6450 500 
+Wire Wire Line
+	9800 500  9800 2450
+Connection ~ 4750 2300
+Wire Wire Line
+	6450 2350 6450 500 
+Connection ~ 6450 500 
+Wire Wire Line
+	6450 500  8100 500 
+Wire Wire Line
+	8100 2400 8100 500 
+Connection ~ 8100 500 
+Wire Wire Line
+	8100 500  9800 500 
 $EndSCHEMATC
