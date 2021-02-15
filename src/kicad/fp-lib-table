@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name PB170)(type KiCad)(uri ${KIPRJMOD}/PB170.pretty)(options "")(descr ""))
+  (lib (name Package_TO_SOT_SMD)(type KiCad)(uri ${KISYSMOD}/Package_TO_SOT_SMD.pretty)(options "")(descr ""))
 )

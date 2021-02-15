@@ -56,7 +56,7 @@ AR Path="/5FFDE494" Ref="U?"  Part="2"
 AR Path="/6009AD55/5FFDE494" Ref="U1"  Part="2" 
 F 0 "U1" H 3675 3517 50  0000 C CNN
 F 1 "74HC08" H 3675 3426 50  0000 C CNN
-F 2 "Housing_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3650 3250 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3650 3250 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 3650 3250 50  0001 C CNN
 F 4 "C5593" H 3650 3250 50  0001 C CNN "LCSC"
 	2    3650 3250
@@ -70,10 +70,34 @@ AR Path="/5FFDC9CB" Ref="U?"  Part="2"
 AR Path="/6009AD55/5FFDC9CB" Ref="U1"  Part="1" 
 F 0 "U1" H 2975 3517 50  0000 C CNN
 F 1 "74HC08" H 2975 3426 50  0000 C CNN
-F 2 "Housing_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2950 3250 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2950 3250 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 2950 3250 50  0001 C CNN
 F 4 "C5593" H 2950 3250 50  0001 C CNN "LCSC"
 	1    2950 3250
 	0    1    1    0   
 $EndComp
+$Comp
+L PB170:74HC08 U?
+U 5 1 606E2846
+P 1600 2900
+AR Path="/606E2846" Ref="U?"  Part="2" 
+AR Path="/6006FC3B/606E2846" Ref="U?"  Part="4" 
+AR Path="/6004480C/606E2846" Ref="U?"  Part="5" 
+AR Path="/6009AD55/606E2846" Ref="U1"  Part="5" 
+F 0 "U1" H 1625 3167 50  0000 C CNN
+F 1 "74HC08" H 1625 3076 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1600 2900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 1600 2900 50  0001 C CNN
+F 4 "C5593" H 1600 2900 50  0001 C CNN "LCSC"
+	5    1600 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 2900 2100 2200
+Wire Wire Line
+	1100 2900 1100 3600
+Text HLabel 2100 2200 1    50   Input ~ 0
+VCC
+Text HLabel 1100 3600 3    50   Output ~ 0
+GND
 $EndSCHEMATC
