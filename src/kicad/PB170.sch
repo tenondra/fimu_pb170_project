@@ -37,27 +37,16 @@ F 3 "" H 10850 2350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0111
-U 1 1 5FD1B586
-P 4550 7500
-F 0 "#PWR0111" H 4550 7250 50  0001 C CNN
-F 1 "GND" H 4555 7327 50  0000 C CNN
-F 2 "" H 4550 7500 50  0001 C CNN
-F 3 "" H 4550 7500 50  0001 C CNN
-	1    4550 7500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R2
 U 1 1 5FD20291
-P 3900 7500
-F 0 "R2" H 3970 7546 50  0000 L CNN
-F 1 "180R" H 3970 7455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 7500 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1800T5E_C22828.pdf" H 3900 7500 50  0001 C CNN
-F 4 "C22828" H 3900 7500 50  0001 C CNN "LCSC"
-	1    3900 7500
-	0    -1   -1   0   
+P 1950 7350
+F 0 "R2" H 2020 7396 50  0000 L CNN
+F 1 "180R" H 2020 7305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 7350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1800T5E_C22828.pdf" H 1950 7350 50  0001 C CNN
+F 4 "C22828" H 1950 7350 50  0001 C CNN "LCSC"
+	1    1950 7350
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C3
@@ -414,17 +403,6 @@ F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 4950 2400 50  0001 L C
 	1    4950 2400
 	0    -1   -1   0   
 $EndComp
-$Comp
-L 74xx:74LS73 U20
-U 2 1 6000B5B4
-P 6350 6350
-F 0 "U20" H 6350 6717 50  0000 C CNN
-F 1 "74LS73" H 6350 6626 50  0000 C CNN
-F 2 "" H 6350 6350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 6350 6350 50  0001 C CNN
-	2    6350 6350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10400 6050 10400 6300
 Wire Wire Line
@@ -493,21 +471,12 @@ Connection ~ 9900 4350
 Wire Wire Line
 	9900 4350 11000 4350
 Wire Wire Line
-	6050 6450 6050 6900
-Wire Wire Line
-	6050 6900 4250 6900
-Wire Wire Line
-	4250 6900 4250 6450
-Connection ~ 4250 6900
-Wire Wire Line
 	4850 6450 5100 6450
 Wire Wire Line
 	4750 2450 4750 2300
 Connection ~ 2650 6350
 Text Notes 3350 6900 0    50   ~ 0
 const 1\n
-Wire Wire Line
-	2650 6900 4250 6900
 $Comp
 L Transistor_BJT:BC817 Q?
 U 1 1 5FFD06D3
@@ -954,14 +923,14 @@ $EndComp
 $Comp
 L Device:LED D2
 U 1 1 5FD1A401
-P 3600 7500
-F 0 "D2" V 3639 7383 50  0000 R CNN
-F 1 "LED yellow" V 3548 7383 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 3600 7500 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1810101813_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.pdf" H 3600 7500 50  0001 C CNN
-F 4 "C72038" V 3600 7500 50  0001 C CNN "LCSC"
-	1    3600 7500
-	-1   0    0    1   
+P 1950 7050
+F 0 "D2" V 1989 6933 50  0000 R CNN
+F 1 "LED yellow" V 1898 6933 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 1950 7050 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1810101813_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.pdf" H 1950 7050 50  0001 C CNN
+F 4 "C72038" V 1950 7050 50  0001 C CNN "LCSC"
+	1    1950 7050
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED DY3
@@ -1411,15 +1380,8 @@ $EndComp
 Wire Wire Line
 	2650 6350 2650 6900
 Wire Wire Line
-	2650 7500 2650 6900
-Wire Wire Line
-	2650 7500 3450 7500
-Connection ~ 2650 6900
-Wire Wire Line
 	1450 6350 1700 6350
 Connection ~ 1700 6350
-Wire Wire Line
-	1700 6350 2650 6350
 Wire Wire Line
 	1700 2450 2050 2450
 Wire Wire Line
@@ -1455,31 +1417,8 @@ Wire Wire Line
 Connection ~ 8100 500 
 Wire Wire Line
 	8100 500  9800 500 
-Wire Wire Line
-	4150 7150 3350 7150
 Text GLabel 3350 7150 0    50   Input ~ 0
 555output
-Wire Wire Line
-	4150 7150 4150 6350
-Wire Wire Line
-	4150 6350 4250 6350
-Wire Wire Line
-	4150 7150 5950 7150
-Wire Wire Line
-	5950 7150 5950 6350
-Wire Wire Line
-	5950 6350 6050 6350
-Connection ~ 4150 7150
-Wire Wire Line
-	3450 6350 4100 6350
-Wire Wire Line
-	4100 6350 4100 6250
-Wire Wire Line
-	4100 6250 4250 6250
-Connection ~ 3450 6350
-Wire Wire Line
-	6050 6250 5350 6250
-Connection ~ 5350 6250
 Wire Wire Line
 	4850 6250 5350 6250
 Wire Wire Line
@@ -1515,17 +1454,6 @@ F 4 "C132879" H 3950 4250 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Connection ~ 3950 4400
-$Comp
-L 74xx:74LS73 U20
-U 1 1 5FFFB942
-P 4550 6350
-F 0 "U20" H 4550 6717 50  0000 C CNN
-F 1 "74LS73" H 4550 6626 50  0000 C CNN
-F 2 "" H 4550 6350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 4550 6350 50  0001 C CNN
-	1    4550 6350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 603D659E
@@ -1580,25 +1508,11 @@ F 3 "74xx/74hc_hct74.pdf" H 7850 5350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6050 6900 7400 6900
-Wire Wire Line
 	7850 6900 7850 5750
-Connection ~ 6050 6900
 Wire Wire Line
 	9700 4950 7850 4950
 Connection ~ 9700 4950
-Wire Wire Line
-	7850 4950 7400 4950
 Connection ~ 7850 4950
-Wire Wire Line
-	4550 6650 4550 7500
-Wire Wire Line
-	4050 7500 4550 7500
-Connection ~ 4550 7500
-Wire Wire Line
-	6350 6650 6350 7500
-Wire Wire Line
-	6350 7500 4550 7500
 $Comp
 L PB170:74HC32 O1
 U 5 1 604F998F
@@ -1673,17 +1587,6 @@ Wire Wire Line
 	1700 1300 1700 1650
 Wire Wire Line
 	4100 4250 4350 4250
-$Comp
-L 74xx:74LS73 U20
-U 3 1 605DCD63
-P 7400 5350
-F 0 "U20" H 7400 5717 50  0000 C CNN
-F 1 "74LS73" H 7400 5626 50  0000 C CNN
-F 2 "" H 7400 5350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 7400 5350 50  0001 C CNN
-	3    7400 5350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7400 5750 7400 6900
 Connection ~ 7400 6900
@@ -1691,10 +1594,6 @@ Wire Wire Line
 	7400 6900 7850 6900
 Wire Wire Line
 	1700 5500 5200 5500
-Wire Wire Line
-	6850 5500 6850 4700
-Wire Wire Line
-	6850 4700 6950 4700
 Wire Wire Line
 	8700 4700 8700 3800
 Wire Wire Line
@@ -1722,7 +1621,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 3950 5350 4650
 Wire Wire Line
-	5350 4650 6500 4650
+	5350 4650 6300 4650
 Connection ~ 6500 4650
 Wire Wire Line
 	7100 3900 7050 3900
@@ -1739,12 +1638,9 @@ Connection ~ 6950 4700
 Wire Wire Line
 	6950 4700 8700 4700
 Wire Wire Line
-	5200 5500 5200 3800
+	5200 5500 5200 5250
 Wire Wire Line
 	5200 3800 5450 3800
-Connection ~ 5200 5500
-Wire Wire Line
-	5200 5500 6850 5500
 Wire Wire Line
 	5350 3950 5450 3950
 Wire Wire Line
@@ -1759,4 +1655,232 @@ Wire Wire Line
 Wire Wire Line
 	5200 3700 5200 3800
 Connection ~ 5200 3800
+Wire Wire Line
+	1950 6900 1950 6350
+Wire Wire Line
+	1700 6350 1950 6350
+Connection ~ 1950 6350
+Wire Wire Line
+	1950 6350 2650 6350
+$Comp
+L power:GND #PWR0109
+U 1 1 60336E39
+P 1950 7550
+F 0 "#PWR0109" H 1950 7300 50  0001 C CNN
+F 1 "GND" H 1955 7377 50  0000 C CNN
+F 2 "" H 1950 7550 50  0001 C CNN
+F 3 "" H 1950 7550 50  0001 C CNN
+	1    1950 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 7550 1950 7500
+$Comp
+L 74xx:74HC74 U22
+U 1 1 6036071F
+P 4550 6350
+F 0 "U22" H 4550 6831 50  0000 C CNN
+F 1 "74HC74" H 4550 6740 50  0000 C CNN
+F 2 "Package_SO:HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3.1mm" H 4550 6350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-SN74HC74PWR_C6761.pdf" H 4550 6350 50  0001 C CNN
+F 4 "C6761" H 4550 6350 50  0001 C CNN "LCSC"
+	1    4550 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4700 6950 4700
+Connection ~ 5200 4700
+Wire Wire Line
+	5200 4700 5200 3800
+Wire Wire Line
+	2650 6900 4000 6900
+$Comp
+L PB170:74HC08 U21
+U 1 1 603E5393
+P 4250 6050
+F 0 "U21" H 4275 6317 50  0000 C CNN
+F 1 "74HC08" H 4275 6226 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4250 6050 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 4250 6050 50  0001 C CNN
+F 4 "C5593" H 4250 6050 50  0001 C CNN "LCSC"
+	1    4250 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PB170:74HC08 U21
+U 2 1 603F9FE3
+P 4250 6650
+F 0 "U21" H 4275 6917 50  0000 C CNN
+F 1 "74HC08" H 4275 6826 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4250 6650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 4250 6650 50  0001 C CNN
+F 4 "C5593" H 4250 6650 50  0001 C CNN "LCSC"
+	2    4250 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PB170:74HC08 U21
+U 3 1 6040F23D
+P 6050 6050
+F 0 "U21" H 6075 6317 50  0000 C CNN
+F 1 "74HC08" H 6075 6226 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6050 6050 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 6050 6050 50  0001 C CNN
+F 4 "C5593" H 6050 6050 50  0001 C CNN "LCSC"
+	3    6050 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PB170:74HC08 U21
+U 4 1 604215E8
+P 6050 6650
+F 0 "U21" H 6075 6917 50  0000 C CNN
+F 1 "74HC08" H 6075 6826 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6050 6650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 6050 6650 50  0001 C CNN
+F 4 "C5593" H 6050 6650 50  0001 C CNN "LCSC"
+	4    6050 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PB170:74HC08 U21
+U 5 1 604332F0
+P 5700 5250
+F 0 "U21" H 5725 5517 50  0000 C CNN
+F 1 "74HC08" H 5725 5426 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5700 5250 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Nexperia-74HC08D-653_C5593.pdf" H 5700 5250 50  0001 C CNN
+F 4 "C5593" H 5700 5250 50  0001 C CNN "LCSC"
+	5    5700 5250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5200 5250
+Wire Wire Line
+	5200 5250 5200 4700
+Wire Wire Line
+	6300 5250 6200 5250
+Wire Wire Line
+	6300 5250 6300 4650
+Connection ~ 6300 4650
+Wire Wire Line
+	6300 4650 6500 4650
+Wire Wire Line
+	6650 6250 6650 5750
+Wire Wire Line
+	6650 5750 5650 5750
+Wire Wire Line
+	5650 5750 5650 6600
+Wire Wire Line
+	5650 6600 5800 6600
+Wire Wire Line
+	6650 6450 6650 7000
+Wire Wire Line
+	6650 7000 5600 7000
+Wire Wire Line
+	5600 7000 5600 6100
+Wire Wire Line
+	5600 6100 5800 6100
+Wire Wire Line
+	5800 6900 5800 6700
+Connection ~ 5800 6900
+Wire Wire Line
+	5350 6250 5350 6000
+Wire Wire Line
+	5350 6000 5800 6000
+Connection ~ 5350 6250
+Wire Wire Line
+	4000 6700 4000 6900
+Connection ~ 4000 6900
+Wire Wire Line
+	4000 6900 5800 6900
+Wire Wire Line
+	4000 6600 3750 6600
+Wire Wire Line
+	3750 6600 3750 5750
+Connection ~ 4850 6250
+Wire Wire Line
+	4850 6450 4850 7000
+Wire Wire Line
+	4850 7000 3800 7000
+Wire Wire Line
+	3800 7000 3800 6100
+Wire Wire Line
+	3800 6100 4000 6100
+Connection ~ 4850 6450
+Wire Wire Line
+	3450 6350 3650 6350
+Wire Wire Line
+	3650 6350 3650 6000
+Wire Wire Line
+	3650 6000 4000 6000
+Connection ~ 3450 6350
+Wire Wire Line
+	3350 7150 3900 7150
+Connection ~ 3900 7150
+Wire Wire Line
+	3900 7150 5750 7150
+Wire Wire Line
+	3900 6350 4250 6350
+Wire Wire Line
+	3900 6350 3900 7150
+Wire Wire Line
+	5750 7150 5750 6350
+Wire Wire Line
+	5750 6350 6050 6350
+Wire Wire Line
+	3750 5750 4850 5750
+Wire Wire Line
+	4850 5750 4850 6250
+$Comp
+L power:GND #PWR0110
+U 1 1 605C299A
+P 4050 7600
+F 0 "#PWR0110" H 4050 7350 50  0001 C CNN
+F 1 "GND" H 4055 7427 50  0000 C CNN
+F 2 "" H 4050 7600 50  0001 C CNN
+F 3 "" H 4050 7600 50  0001 C CNN
+	1    4050 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6250 4250 6250
+Wire Wire Line
+	4050 6250 4050 7500
+Wire Wire Line
+	6050 6250 5450 6250
+Wire Wire Line
+	5450 6250 5450 7500
+Wire Wire Line
+	5450 7500 4050 7500
+Connection ~ 4050 7500
+Wire Wire Line
+	4050 7500 4050 7600
+Wire Wire Line
+	7400 4950 7850 4950
+Wire Wire Line
+	5800 6900 7400 6900
+$Comp
+L 74xx:74HC74 U22
+U 2 1 60644BF1
+P 6350 6350
+F 0 "U22" H 6350 6831 50  0000 C CNN
+F 1 "74HC74" H 6350 6740 50  0000 C CNN
+F 2 "Package_SO:HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3.1mm" H 6350 6350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-SN74HC74PWR_C6761.pdf" H 6350 6350 50  0001 C CNN
+F 4 "C6761" H 6350 6350 50  0001 C CNN "LCSC"
+	2    6350 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC74 U22
+U 3 1 6065D3F5
+P 7400 5350
+F 0 "U22" H 7170 5304 50  0000 R CNN
+F 1 "74HC74" H 7170 5395 50  0000 R CNN
+F 2 "Package_SO:HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3x3.1mm" H 7400 5350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-SN74HC74PWR_C6761.pdf" H 7400 5350 50  0001 C CNN
+F 4 "C6761" H 7400 5350 50  0001 C CNN "LCSC"
+	3    7400 5350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
