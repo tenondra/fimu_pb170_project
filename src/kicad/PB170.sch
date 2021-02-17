@@ -124,7 +124,7 @@ P 1150 6550
 F 0 "J2" H 1207 7017 50  0000 C CNN
 F 1 "USB_B_Micro" H 1207 6926 50  0000 C CNN
 F 2 "PB170:MICRO-USB-SMD_MICROXNJ" H 1300 6500 50  0001 C CNN
-F 3 "~" H 1300 6500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_SHOU-HAN-MicroXNJ_C404969.pdf" H 1300 6500 50  0001 C CNN
 F 4 "C404969" H 1150 6550 50  0001 C CNN "LCSC"
 	1    1150 6550
 	1    0    0    -1  
@@ -318,30 +318,6 @@ F 3 "https://datasheet.lcsc.com/szlcsc/Hubei-KENTO-Elec-KT-0603R_C2286.pdf" H 53
 F 4 "C2286" V 5350 1000 50  0001 C CNN "LCSC"
 	1    5350 1000
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R RR3
-U 1 1 5FFFA5F7
-P 5650 2200
-F 0 "RR3" H 5720 2246 50  0000 L CNN
-F 1 "180R" H 5720 2155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 2200 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1800T5E_C22828.pdf" H 5650 2200 50  0001 C CNN
-F 4 "C22828" H 5650 2200 50  0001 C CNN "LCSC"
-	1    5650 2200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R RR1
-U 1 1 5FFFA5FE
-P 5650 1000
-F 0 "RR1" H 5720 1046 50  0000 L CNN
-F 1 "130R" H 5720 955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 1000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1300T5E_C22796.pdf" H 5650 1000 50  0001 C CNN
-F 4 "C22796" H 5650 1000 50  0001 C CNN "LCSC"
-	1    5650 1000
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0113
@@ -1954,4 +1930,28 @@ Wire Wire Line
 Connection ~ 5650 6900
 Wire Wire Line
 	5650 6900 7400 6900
+$Comp
+L Device:R RR3
+U 1 1 6031EE60
+P 5650 2200
+F 0 "RR3" H 5720 2246 50  0000 L CNN
+F 1 "220R" H 5720 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 2200 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF2200T5E_C22962.pdf" H 5650 2200 50  0001 C CNN
+F 4 "C22962" H 5650 2200 50  0001 C CNN "LCSC"
+	1    5650 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R RR1
+U 1 1 6033A116
+P 5650 1000
+F 0 "RR1" H 5720 1046 50  0000 L CNN
+F 1 "220R" H 5720 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 1000 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF2200T5E_C22962.pdf" H 5650 1000 50  0001 C CNN
+F 4 "C22962" H 5650 1000 50  0001 C CNN "LCSC"
+	1    5650 1000
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
