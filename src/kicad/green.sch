@@ -16,19 +16,17 @@ $EndDescr
 Text HLabel 4400 2100 1    50   Input ~ 0
 D1Q
 Text HLabel 5650 2150 1    50   Input ~ 0
-D1!Q
+D1~Q
 Text HLabel 3900 2100 1    50   Input ~ 0
 D2Q
 Text HLabel 3000 2100 1    50   Input ~ 0
-D2!Q
+D2~Q
 Text HLabel 3800 2100 1    50   Input ~ 0
 JK1Q
 Text HLabel 2450 2100 1    50   Input ~ 0
-JK1!Q
+JK1~Q
 Text HLabel 2350 2100 1    50   Input ~ 0
 JK2Q
-Text HLabel 5050 2150 1    50   Input ~ 0
-JK2!Q
 Text HLabel 2800 3500 3    50   Output ~ 0
 g1
 Text HLabel 4200 3400 3    50   Output ~ 0
@@ -92,7 +90,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 2850 2850 2950
 Text HLabel 3100 2100 1    50   Input ~ 0
-D2!Q
+D2~Q
 $Comp
 L PB170:74HC08 U?
 U 4 1 5FFE497C
@@ -202,7 +200,7 @@ Wire Wire Line
 Text HLabel 5150 2150 1    50   Input ~ 0
 D2Q
 Text HLabel 5750 2150 1    50   Input ~ 0
-JK1!Q
+JK1~Q
 $Comp
 L PB170:74HC08 U?
 U 2 1 5FFEB238
@@ -260,11 +258,11 @@ Wire Wire Line
 Text HLabel 6350 2150 1    50   Input ~ 0
 JK2Q
 Text HLabel 6450 2150 1    50   Input ~ 0
-D2!Q
+D2~Q
 Text HLabel 7000 2150 1    50   Input ~ 0
-D1!Q
+D1~Q
 Text HLabel 7100 2150 1    50   Input ~ 0
-D1!Q
+D1~Q
 $Comp
 L PB170:74HC08 U?
 U 5 1 606691F5
@@ -330,4 +328,6 @@ Text HLabel 1800 1700 1    50   Input ~ 0
 VCC
 Text HLabel 800  4300 3    50   Output ~ 0
 GND
+Text HLabel 5050 2150 1    50   Input ~ 0
+JK2~Q
 $EndSCHEMATC

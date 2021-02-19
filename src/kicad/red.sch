@@ -14,9 +14,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 2750 2300 1    50   Input ~ 0
-D1!Q
+D1~Q
 Text HLabel 3100 2300 1    50   Input ~ 0
-D2!Q
+D2~Q
 Text HLabel 3650 2300 1    50   Input ~ 0
 JK2Q
 Text HLabel 2950 3550 3    50   Output ~ 0

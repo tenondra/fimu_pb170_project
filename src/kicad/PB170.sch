@@ -477,11 +477,11 @@ Wire Wire Line
 Text GLabel 5250 6450 3    50   Input ~ 0
 JK1Q
 Text GLabel 5100 6450 3    50   Input ~ 0
-JK1!Q
+JK1~Q
 Text GLabel 6650 6250 2    50   Input ~ 0
 JK2Q
 Text GLabel 6650 6450 2    50   Input ~ 0
-JK2!Q
+JK2~Q
 Wire Wire Line
 	8500 4350 8200 4350
 Wire Wire Line
@@ -505,11 +505,11 @@ Connection ~ 8550 4500
 Text GLabel 7750 4300 1    50   Input ~ 0
 D1Q
 Text GLabel 7900 4300 1    50   Input ~ 0
-D1!Q
+D1~Q
 Text GLabel 8050 4300 1    50   Input ~ 0
 D2Q
 Text GLabel 8200 4300 1    50   Input ~ 0
-D2!Q
+D2~Q
 $Sheet
 S 8800 3250 1000 900 
 U 60019DBB
@@ -517,11 +517,11 @@ F0 "yellow" 50
 F1 "yellow.sch" 50
 F2 "D1Q" I R 9800 3300 50 
 F3 "D2Q" I R 9800 3500 50 
-F4 "D2!Q" I R 9800 3600 50 
+F4 "D2~Q" I R 9800 3600 50 
 F5 "JK1Q" I R 9800 3750 50 
-F6 "JK1!Q" I R 9800 3850 50 
+F6 "JK1~Q" I R 9800 3850 50 
 F7 "JK2Q" I R 9800 3950 50 
-F8 "JK2!Q" I R 9800 4050 50 
+F8 "JK2~Q" I R 9800 4050 50 
 F9 "y1" I L 8800 3350 50 
 F10 "y2" I L 8800 3450 50 
 F11 "y3" I L 8800 3550 50 
@@ -534,15 +534,15 @@ D1Q
 Text GLabel 9800 3500 2    50   Input ~ 0
 D2Q
 Text GLabel 9800 3600 2    50   Input ~ 0
-D2!Q
+D2~Q
 Text GLabel 9800 3750 2    50   Input ~ 0
 JK1Q
 Text GLabel 9800 3850 2    50   Input ~ 0
-JK1!Q
+JK1~Q
 Text GLabel 9800 3950 2    50   Input ~ 0
 JK2Q
 Text GLabel 9800 4050 2    50   Input ~ 0
-JK2!Q
+JK2~Q
 Wire Wire Line
 	8800 3350 8750 3350
 Wire Wire Line
@@ -565,11 +565,11 @@ U 6004480C
 F0 "blue" 50
 F1 "blue.sch" 50
 F2 "D1Q" I R 8050 3250 50 
-F3 "D1!Q" I R 8050 3350 50 
+F3 "D1~Q" I R 8050 3350 50 
 F4 "D2Q" I R 8050 3450 50 
-F5 "D2!Q" I R 8050 3550 50 
+F5 "D2~Q" I R 8050 3550 50 
 F6 "JK1Q" I R 8050 3700 50 
-F7 "JK1!Q" I R 8050 3800 50 
+F7 "JK1~Q" I R 8050 3800 50 
 F8 "JK2Q" I R 8050 3900 50 
 F9 "b1" I L 7100 3300 50 
 F10 "b2" I L 7100 3400 50 
@@ -603,15 +603,15 @@ Wire Wire Line
 Text GLabel 8050 3250 2    50   Input ~ 0
 D1Q
 Text GLabel 8050 3350 2    50   Input ~ 0
-D1!Q
+D1~Q
 Text GLabel 8050 3450 2    50   Input ~ 0
 D2Q
 Text GLabel 8050 3550 2    50   Input ~ 0
-D2!Q
+D2~Q
 Text GLabel 8050 3700 2    50   Input ~ 0
 JK1Q
 Text GLabel 8050 3800 2    50   Input ~ 0
-JK1!Q
+JK1~Q
 Text GLabel 8050 3900 2    50   Input ~ 0
 JK2Q
 $Sheet
@@ -620,13 +620,13 @@ U 6006FC3B
 F0 "green" 50
 F1 "green.sch" 50
 F2 "D1Q" I R 6500 3250 50 
-F3 "D1!Q" I R 6500 3350 50 
+F3 "D1~Q" I R 6500 3350 50 
 F4 "D2Q" I R 6500 3450 50 
-F5 "D2!Q" I R 6500 3550 50 
+F5 "D2~Q" I R 6500 3550 50 
 F6 "JK1Q" I R 6500 3700 50 
-F7 "JK1!Q" I R 6500 3800 50 
+F7 "JK1~Q" I R 6500 3800 50 
 F8 "JK2Q" I R 6500 3900 50 
-F9 "JK2!Q" I R 6500 4000 50 
+F9 "JK2~Q" I R 6500 4000 50 
 F10 "g1" I L 5450 3300 50 
 F11 "g2" I L 5450 3400 50 
 F12 "g3" I L 5450 3500 50 
@@ -637,19 +637,19 @@ $EndSheet
 Text GLabel 6500 3250 2    50   Input ~ 0
 D1Q
 Text GLabel 6500 3350 2    50   Input ~ 0
-D1!Q
+D1~Q
 Text GLabel 6500 3450 2    50   Input ~ 0
 D2Q
 Text GLabel 6500 3550 2    50   Input ~ 0
-D2!Q
+D2~Q
 Text GLabel 6500 3700 2    50   Input ~ 0
 JK1Q
 Text GLabel 6500 3800 2    50   Input ~ 0
-JK1!Q
+JK1~Q
 Text GLabel 6500 3900 2    50   Input ~ 0
 JK2Q
 Text GLabel 6500 4000 2    50   Input ~ 0
-JK2!Q
+JK2~Q
 Wire Wire Line
 	5450 3300 5400 3300
 Wire Wire Line
@@ -672,19 +672,6 @@ Wire Wire Line
 	5450 3600 5250 3600
 Wire Wire Line
 	5250 3600 5250 2550
-$Sheet
-S 4150 3150 750  750 
-U 6009AD55
-F0 "red" 50
-F1 "red.sch" 50
-F2 "D1!Q" I R 4900 3250 50 
-F3 "D2!Q" I R 4900 3350 50 
-F4 "JK2Q" I R 4900 3500 50 
-F5 "r1" I L 4150 3250 50 
-F6 "r2" I L 4150 3350 50 
-F7 "VCC" I R 4900 3700 50 
-F8 "GND" O R 4900 3850 50 
-$EndSheet
 Wire Wire Line
 	4150 3250 4100 3250
 Wire Wire Line
@@ -694,10 +681,10 @@ Wire Wire Line
 Wire Wire Line
 	4050 3350 4050 2550
 Text GLabel 4900 3250 2    50   Input ~ 0
-D1!Q
-Text GLabel 4900 3350 2    50   Input ~ 0
-D2!Q
-Text GLabel 4900 3500 2    50   Input ~ 0
+D1~Q
+Text GLabel 4900 3400 2    50   Input ~ 0
+D2~Q
+Text GLabel 4900 3550 2    50   Input ~ 0
 JK2Q
 Connection ~ 6900 2250
 $Comp
@@ -1954,4 +1941,17 @@ F 4 "C22962" H 5650 1000 50  0001 C CNN "LCSC"
 	1    5650 1000
 	0    -1   -1   0   
 $EndComp
+$Sheet
+S 4150 3150 750  750 
+U 6009AD55
+F0 "red" 50
+F1 "red.sch" 50
+F2 "D1~Q" I R 4900 3250 50 
+F3 "D2~Q" I R 4900 3400 50 
+F4 "JK2Q" I R 4900 3550 50 
+F5 "r1" I L 4150 3250 50 
+F6 "r2" I L 4150 3350 50 
+F7 "VCC" I R 4900 3700 50 
+F8 "GND" O R 4900 3850 50 
+$EndSheet
 $EndSCHEMATC

@@ -16,15 +16,15 @@ $EndDescr
 Text HLabel 4000 2400 1    50   Input ~ 0
 D1Q
 Text HLabel 6200 2450 1    50   Input ~ 0
-D1!Q
+D1~Q
 Text HLabel 5800 2450 1    50   Input ~ 0
 D2Q
 Text HLabel 2800 2400 1    50   Input ~ 0
-D2!Q
+D2~Q
 Text HLabel 5700 2450 1    50   Input ~ 0
 JK1Q
 Text HLabel 2350 2400 1    50   Input ~ 0
-JK1!Q
+JK1~Q
 Text HLabel 2250 2400 1    50   Input ~ 0
 JK2Q
 Text HLabel 2550 3650 3    50   Output ~ 0
@@ -89,7 +89,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 2950 2850 2950
 Text HLabel 2900 2400 1    50   Input ~ 0
-D2!Q
+D2~Q
 $Comp
 L PB170:74HC08 U?
 U 4 1 5FFF20EC
@@ -144,7 +144,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 2950 3700 3100
 Text HLabel 3400 2400 1    50   Input ~ 0
-D2!Q
+D2~Q
 Text HLabel 3500 2400 1    50   Input ~ 0
 JK2Q
 Text HLabel 4100 2400 1    50   Input ~ 0
@@ -203,9 +203,9 @@ Wire Wire Line
 Wire Wire Line
 	4850 3000 4850 3150
 Text HLabel 4600 2450 1    50   Input ~ 0
-JK1!Q
+JK1~Q
 Text HLabel 4500 2450 1    50   Input ~ 0
-D2!Q
+D2~Q
 Text HLabel 5100 2450 1    50   Input ~ 0
 D1Q
 Text HLabel 5200 2450 1    50   Input ~ 0
@@ -264,7 +264,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 3200 6000 3200
 Text HLabel 6300 2450 1    50   Input ~ 0
-D1!Q
+D1~Q
 $Comp
 L PB170:74HC08 U?
 U 5 1 60660C51

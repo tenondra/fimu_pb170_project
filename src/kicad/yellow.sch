@@ -18,15 +18,15 @@ D1Q
 Text HLabel 2950 2600 1    50   Input ~ 0
 D2Q
 Text HLabel 4400 2700 1    50   Input ~ 0
-D2!Q
+D2~Q
 Text HLabel 2400 2600 1    50   Input ~ 0
 JK1Q
 Text HLabel 3750 2650 1    50   Input ~ 0
-JK1!Q
+JK1~Q
 Text HLabel 2500 2600 1    50   Input ~ 0
 JK2Q
 Text HLabel 5900 2700 1    50   Input ~ 0
-JK2!Q
+JK2~Q
 Text HLabel 2750 3850 3    50   Output ~ 0
 y1
 Text HLabel 4050 3850 3    50   Output ~ 0
@@ -264,19 +264,19 @@ D2Q
 Text HLabel 3850 2650 1    50   Input ~ 0
 JK2Q
 Text HLabel 4500 2700 1    50   Input ~ 0
-D2!Q
+D2~Q
 Text HLabel 5200 2650 1    50   Input ~ 0
-JK1!Q
+JK1~Q
 Text HLabel 5300 2650 1    50   Input ~ 0
 D2Q
 Text HLabel 6350 2700 1    50   Input ~ 0
-JK2!Q
+JK2~Q
 Text HLabel 6450 2700 1    50   Input ~ 0
 JK1Q
 Text HLabel 6900 2700 1    50   Input ~ 0
 D1Q
 Text HLabel 7000 2700 1    50   Input ~ 0
-D2!Q
+D2~Q
 $Comp
 L PB170:74HC08 U?
 U 5 1 6060BB07
